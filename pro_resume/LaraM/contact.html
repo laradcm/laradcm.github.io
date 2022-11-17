@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="icon" href="imgs/moon-stars.png">
+  <title>Lara Mauricio - Contact</title>
+</head>
+<body>
+
+  <div class="sidenav">
+
+    <div class="lara">
+      <h2>Lara de Castro Mauricio</h2>
+      <p>Web Dev Student</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">About</a>
+      <a href="work-history.html">Work History</a>
+      <a href="academic-training.html">Academic Training</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-contacts">
+      <a href="https://github.com/laradcm"><img src="imgs/social/github.png" alt="github icon" width="30px"></a>
+      <a href="https://www.linkedin.com"><img src="imgs/social/linkedin.png" alt="" width="30px"></a>
+      <a href="mailto:lara.decastromauricio@mail.mcgill.ca ?subject=Enquiries"><img src="imgs/social/envelope.png"
+          alt="" width="30px"></a>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="content">
+
+      <h2>Contact</h2>
+      
+      <form action="form.php" method="POST">
+
+        <p>Feel free to send me enquiries using this form.</p>
+
+        <div class="form-inputs">
+          <label for="name" id="label-name">Name:  <span>*</span></label>
+          <input required type="text" name="name" id="name">
+
+          <label for="email" id="label-email">Email:  <span>*</span></label>
+
+          <input
+
+            pattern='^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$'
+
+            required  type="text" name="email" id="email"
+          >
+
+          <label for="subject" id="label-subject">Subject:  <span>*</span></label>
+          <input required type="text" name="subject" id="subject">
+
+          <label for="message" id="label-message">Message: <span>*</span></label>
+          <textarea required name="message" cols="30" rows="10" id="message"></textarea>
+
+          <input type="submit" name="submit" id="submit" value="Send Now">
+        </div>
+
+      </form>
+
+      <a href="doc/CV.pdf" download="CV"><img src="imgs/social/document.png" alt="cv download icon" width="30px"></a>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

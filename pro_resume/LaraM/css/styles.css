@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{height: 100%;}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(7, 2, 38);
+    background-image: url("../imgs/pexels-rafael-cerqueira-4737484.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sidenav {
+
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(7, 2, 38, 0.7) 30%, rgba(7, 2, 38, 0) 100%);
+    color: rgb(208, 200, 200);
+    overflow-x: hidden;
+}
+
+.nav-links a {
+
+    display: block;
+    text-decoration: none;
+    color: rgb(208, 200, 200);
+    padding: 1em;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(to right, rgba(221, 221, 221, 0.2) 10%, rgba(221, 221, 221, 0) 100%);
+    color: white;
+}
+
+.lara{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    text-align: left;
+}
+
+.lara *{margin-bottom: 8px;}
+
+.nav-content{margin: 1em;}
+
+.nav-contacts{padding-top: 1em;}
+
+.nav-contacts a{
+
+    padding: 0;
+    margin: 1em;
+}
+
+.container{  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:25%;
+}
+
+.content {
+    
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    color: rgb(208, 200, 200);
+    background: linear-gradient(to right, rgba(7, 2, 38, 0.6) 60%, rgba(7, 2, 38, 0) 100%);
+    border-radius: 10px;
+
+    width: 100%;
+    min-height: 200px;
+    margin-left: 320px;
+    margin-right: 20px;
+    padding-top: 1em;
+    padding-left: 20px;
+    padding-bottom: 1em;
+
+}
+
+.content h2 {padding-bottom:1em;}
+
+.wallpaper-cite{padding-top: 1em;}
+
+a:visited, a:link{color: rgb(208, 200, 200);}
+
+dd{
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 1100px){
+    .sidenav{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        width: 100%; 
+        background: linear-gradient(to bottom, rgba(7, 2, 38, 0.7) 30%, rgba(7, 2, 38, 0) 100%);   
+    }
+
+    .nav-links{
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-links a:hover {background: linear-gradient(to bottom, rgba(221, 221, 221, 0.2) 10%, rgba(221, 221, 221, 0) 100%);}
+
+    .sidenav * {margin:0;}
+
+    .lara{margin: 1em;}
+
+    .container{position: relative;}
+
+    .content{
+
+        margin: 0;
+        margin-top: 1em;
+        padding: 1em;
+    }
+
+}
