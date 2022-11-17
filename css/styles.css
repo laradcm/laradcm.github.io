@@ -4,13 +4,12 @@
     padding: 0;
 }
 
-html{height: 100%;}
 
 body {
-
+	height:100vh;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(7, 2, 38);
-    background-image: url("https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg");
+    background-image: url("../imgs/pexels-rafael-cerqueira-4737484.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -66,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     top:25%;
 }
 
@@ -111,6 +110,8 @@ dd{
         justify-content: space-between;
         position: relative;
         width: 100%; 
+		height: fit-content;
+		padding-bottom:2em;
         background: linear-gradient(to bottom, rgba(7, 2, 38, 0.7) 30%, rgba(7, 2, 38, 0) 100%);   
     }
 
@@ -126,7 +127,7 @@ dd{
 
     .lara{margin: 1em;}
 
-    .container{position: relative;}
+    .container{top: auto;}
 
     .content{
 
